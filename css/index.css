@@ -1,16 +1,4 @@
 @font-face {
-    font-family: "FiraSans-bold";
-    src: url("../fonts/FiraSans-bold.ttf");
-}
-@font-face {
-    font-family: "FiraSans-italic";
-    src: url("../fonts/FiraSans-italic.ttf");
-}
-@font-face {
-    font-family: "FiraSans-medium";
-    src: url("../fonts/FiraSans-medium.ttf");
-}
-@font-face {
     font-family: "FiraSans";
     src: url("../fonts/FiraSans.ttf");
 }
@@ -65,9 +53,9 @@ form button {
     background-color: transparent;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "FiraSans-bold", sans-serif;
+    font-weight: bold;
     color: #39945b;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 input {
     border: none;
@@ -83,6 +71,7 @@ input {
 .contact-numbers-sm a {
     color: #39945b;
     font-size: 15px;
+
 }
 .contact-numbers a:hover,
 .contact-numbers-sm a:hover {
@@ -90,7 +79,8 @@ input {
     transition: all .5s;
 }
 .phone_number {
-    font: 18px "FiraSans-medium", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 /* Navbar */
 .navbar-default {
@@ -109,8 +99,8 @@ input {
     margin-left: 100px;
     padding: 25px 0;
     color: #FFFFFF;
-    font-family: "FiraSans-bold", sans-serif;
-    letter-spacing: 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 .navbar-default .navbar-nav li:last-child {
     margin-right: 100px;
@@ -144,8 +134,9 @@ input {
 }
 #slider .carousel-caption h1 {
     z-index: 2;
-    letter-spacing: 2px;
-    font: 48px "FiraSans-medium", sans-serif;
+    letter-spacing: 1px;
+    font-size: 48px;
+    font-weight: bolder;
 }
 #slider .carousel-caption p {
     z-index: 3;
@@ -154,10 +145,10 @@ input {
 }
 #slider .carousel-caption a {
     z-index: 4;
-    font-family: "FiraSans-bold", sans-serif;
+    font-weight: bolder;
     color: #FFFFFF;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-bottom: 15px;
     border-bottom: 3px solid #FFFFFF;
 }
@@ -210,15 +201,11 @@ input {
     margin-top:7%;
     border-bottom: 3px solid #39945b;
 }
-.main-services {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font: 22px "FiraSans-bold", sans-serif;
-}
 .main-services h2 {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font: 22px "FiraSans-bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: bolder;
 }
 .underline_3 {
     width: 65px;
@@ -230,7 +217,8 @@ input {
     padding: 115px 0 60px 0;
 }
 .main-services-content h3 {
-    font: 22px "FiraSans-bold", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
     color: #39945b;
 }
 .main-services-content ul li {
@@ -253,8 +241,9 @@ input {
 }
 .our-clients h2 {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font: 22px "FiraSans-bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: bold;
 }
 /* Наши клиенты - slider */
 #clients-slider {
@@ -294,14 +283,16 @@ input {
 }
 .question-answer h2 {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font: 22px "FiraSans-bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: bold;
     margin-top: 50px;
 }
 .question-answer {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font: 22px "FiraSans-bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: bold;
     color: #FFFFFF;
 }
 .underline_4 {
@@ -315,7 +306,8 @@ input {
     padding: 20px 25px 0 30px;
 }
 .quote-content h4 {
-    font: 17px "FiraSans-medium", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
     color: #4c453f;
     font-style: italic;
     line-height: 28px;
@@ -334,9 +326,10 @@ input {
 }
 .quote-content a {
     position: relative;
-    font: 14px "FiraSans-bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
     padding-bottom: 10px;
     margin-left: 20px;
     color: #39945b;
@@ -356,8 +349,9 @@ input {
 /* Отзывы и публикации */
 .comments h2 {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font: 22px "FiraSans-bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: bold;
     margin-top: 60px;
 }
 .comments-content {
@@ -366,8 +360,9 @@ input {
 }
 .comments-content h2 {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font: 22px "FiraSans-bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: bolder;
     color: #39945b;
     margin-bottom: -20px;
 }
@@ -443,8 +438,9 @@ input {
 .footer h5,
 .footer-xs h5 {
     text-transform: uppercase;
-    font: 14px "FiraSans-bold", sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: bold;
 }
 .footer ul li,
 .footer-xs ul li {
@@ -494,7 +490,8 @@ input {
         bottom: 17%;
     }
     #slider .carousel-caption h1 {
-        font: 34px "FiraSans-medium", sans-serif;
+        font-size: 34px;
+        font-weight: bold;
     }
     #slider .carousel-caption p {
         font-size: 16px;
@@ -513,7 +510,8 @@ input {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     /* Header */
     .phone_number {
-        font: 14px "FiraSans-medium", sans-serif;
+        font-size: 14px;
+        font-weight: bold;
     }
     .contact-numbers a {
         color: #39945b;
@@ -675,7 +673,7 @@ input {
         bottom: 3%;
     }
     #slider .carousel-caption h1 {
-        font: 30px "FiraSans-medium", sans-serif;
+        font-size: 30px;
     }
     #slider .carousel-caption p {
         padding: 5px 0 10px 0;
@@ -789,7 +787,7 @@ input {
 @media only screen and (max-width: 991px) {
     /* Header */
     .phone_number {
-        font: 14px "FiraSans-medium", sans-serif;
+        font-size: 14px;
         margin-left: 10px;
     }
     .contact-numbers a {
@@ -825,7 +823,7 @@ input {
         bottom: 3%;
     }
     #slider .carousel-caption h1 {
-        font: 26px "FiraSans-medium", sans-serif;
+        font-size: 26px;
     }
     #slider .carousel-caption p {
         font-size: 14px;
@@ -891,11 +889,11 @@ input {
     .phone_number {
         font-size: 14px;
         margin-bottom: 0;
+        margin-top: 10px;
     }
-    .contact-numbers-sm{
-        margin-top: 20px;
-        margin-left: 10px;
-        padding-bottom: 10px;
+    .contact-numbers-sm {
+        margin: 20px 0 10px 10px;
+        padding-bottom: 0px;
     }
     .contact-numbers-sm a {
         font-size: 10px;
@@ -989,7 +987,7 @@ input {
         bottom: 20%;
     }
     #slider .caption-xs h1 {
-        font: 16px "FiraSans-medium", sans-serif;
+        font-size: 16px;
     }
     #slider .caption-xs a {
         font-size: 12px;
@@ -1030,18 +1028,16 @@ input {
         font-size: 16px;
     }
     .main-services {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font: 16px "FiraSans-bold", sans-serif;
+        font-size: 16px;
     }
     .main-services h2 {
-        font: 20px "FiraSans-bold", sans-serif;
+        font-size: 20px;
     }
     .main-services-content {
         padding: 30px 0 50px 0;
     }
     .main-services-content h3 {
-        font: 20px "FiraSans-bold", sans-serif;
+        font-size: 20px;
     }
     .main-services-content ul li {
         font-size: 16px;
