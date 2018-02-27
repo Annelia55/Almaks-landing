@@ -2,7 +2,7 @@
     font-family: "FiraSans";
     src: url("../fonts/FiraSans.ttf");
 }
-/* reset setting */
+/* --------------------------------------------------------------------------------------------------- RESET SETTINGS */
 html {
     height: 100%;
     font-size: 100%;
@@ -19,7 +19,7 @@ body {
     outline: none;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
-            box-sizing: border-box; /* при указании внутренних padding - ширина не учитывается */
+            box-sizing: border-box;
 }
 a{cursor: pointer;}
 a:hover {text-decoration: none;}
@@ -39,7 +39,7 @@ img {border: none;}
     padding-right:0;
     padding-left:0;
 }
-/* Header */
+/* ----------------------------------------------------------------------------------------------------------- HEADER */
 #logo {
     margin: 20px 0 30px 0;
 }
@@ -62,27 +62,27 @@ input {
     margin: 40px 0 10px 0;
     color: #000;
 }
-.contact-numbers,
-.contact-numbers-sm{
+.header__contacts,
+.header__contacts-sm{
     margin-top: 35px;
     letter-spacing: 1px;
 }
-.contact-numbers a,
-.contact-numbers-sm a {
+.header__contacts a,
+.header__contacts-sm a {
     color: #39945b;
     font-size: 15px;
 
 }
-.contact-numbers a:hover,
-.contact-numbers-sm a:hover {
+.header__contacts a:hover,
+.header__contacts-sm a:hover {
     color: #cb5a3d;
     transition: all .5s;
 }
-.phone_number {
+.header__phone {
     font-size: 18px;
     font-weight: bold;
 }
-/* Navbar */
+/* ----------------------------------------------------------------------------------------------------------- NAVBAR */
 .navbar-default {
     z-index: 9;
     position: absolute;
@@ -90,7 +90,7 @@ input {
     background-color: #cb5a3d;
     border: none;
 }
-.navbar-nav li > .divider-nav {
+.navbar-nav li > .divider {
     position: absolute;
     margin-top: 32px;
     margin-left: 80px;
@@ -113,7 +113,7 @@ input {
 .navbar-default .navbar-toggle {
     border-color: #ddd;
 }
-/* Navbar - slider */
+/* ---------------------------------------------------------------------------------------------------- NAVBAR SLIDER */
 #slider {
     margin-top: 38px;
 }
@@ -157,7 +157,7 @@ input {
     border-bottom: 3px solid #833927;
     transition: all .5s;
 }
-.underline_1 {
+.slider__underline {
     width: 65px;
     margin-top: 2%;
     border-bottom: 3px solid #39945b;
@@ -170,7 +170,7 @@ input {
     top: -160px;
     background-color: rgba(72, 142, 88, 0.70);
 }
-/* Indicators */
+/* ---------------------------------------------------------------------------------------------- CAROUSEL INDICATORS */
 #slider .carousel-indicators {
     top: 30px;
 }
@@ -189,14 +189,14 @@ input {
 #slider .carousel-indicators li:hover {
     border: 3px solid #cb5a3d;
 }
-/* Наши основные услуги */
+/* --------------------------------------------------------------------------------------------- НАШИ ОСНОВНЫЕ УСЛУГИ */
 .intro p {
     padding: 80px 0 80px 0;
     font-size: 17px;
     color: #4c453f;
     letter-spacing: 0;
 }
-.underline_2 {
+.intro__underline {
     width: 65px;
     margin-top:7%;
     border-bottom: 3px solid #39945b;
@@ -207,7 +207,7 @@ input {
     font-size: 22px;
     font-weight: bolder;
 }
-.underline_3 {
+.default_underline {
     width: 65px;
     margin-top: 20%;
     border-bottom: 3px solid #39945b;
@@ -230,35 +230,35 @@ input {
 .main-services-content ul li img {
     margin-right: 30px;
 }
-/* Наши клиенты */
-.container-fluid.clients-container {
+/* ----------------------------------------------------------------------------------------------------- НАШИ КЛИЕНТЫ */
+.container-fluid.clients {
     border-top: 50px solid #cb5a3d;
     border-right: 50px solid #cb5a3d;
     border-left: 50px solid #cb5a3d;
 }
-.our-clients {
+.clients__header {
     margin-top: 20px;
 }
-.our-clients h2 {
+.clients__header h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 22px;
     font-weight: bold;
 }
-/* Наши клиенты - slider */
-#clients-slider {
+/* --------------------------------------------------------------------------------------------- НАШИ КЛИЕНТЫ - SLIDER */
+#clients__slider {
     margin: 125px 0 100px 0;
 }
-#clients-slider a:first-child {
+#clients__slider a:first-child {
     margin-left: 5px;
 }
-#clients-slider a {
+#clients__slider a {
     display: inline-block;
     margin-right: 20px;
     max-height: 90px;
     max-width: 260px;
 }
-#clients-slider a:last-child {
+#clients__slider a:last-child {
     margin-right: 5px;
 }
 .carousel-control {
@@ -276,7 +276,7 @@ input {
 .carousel-control.left:hover {
     background: url("../img/control-left-hover.png") center  no-repeat;
 }
-/* Вопрос - ответ */
+/* --------------------------------------------------------------------------------------------------- ВОПРОС - ОТВЕТ */
 .container-fluid.question-answer-container {
     background: url(../img/question-answer-img.png) center;
     background-size: cover;
@@ -295,36 +295,36 @@ input {
     font-weight: bold;
     color: #FFFFFF;
 }
-.underline_4 {
+.question-answer__underline {
     width: 65px;
     margin-top: 20%;
     border-bottom: 3px solid #ffffff;
 }
-.quote-content {
+.question-answer__quote {
     background-color: #FFFFFF;
     margin: 130px 30px 80px 0;
     padding: 20px 25px 0 30px;
 }
-.quote-content h4 {
+.question-answer__quote h4 {
     font-size: 17px;
     font-weight: 300;
     color: #4c453f;
     font-style: italic;
     line-height: 28px;
 }
-.quote-article {
+.question-answer__quote_content {
     padding-bottom: 70px;
 }
-.quote-content p {
+.question-answer__quote p {
     font-size: 15px;
     color: #4c453f;
     line-height: 24px;
     margin: 30px 0 0 20px;
 }
-.quote-content img {
+.question-answer__quote img {
     padding: 30px 0 0 10px;
 }
-.quote-content a {
+.question-answer__quote a {
     position: relative;
     letter-spacing: 1px;
     font-size: 14px;
@@ -335,18 +335,18 @@ input {
     color: #39945b;
     border-bottom: 3px solid #39945b;
 }
-.quote-content a:hover {
+.question-answer__quote a:hover {
     color: #cb5a3d;
     border-bottom: 3px solid #cb5a3d;
     transition: all .5s;
 }
-.quote-content p.link-left {
+.question-answer__quote p.question-answer__quote_content_left {
     padding-bottom: 50px;
 }
-.quote-content p.link-right {
+.question-answer__quote p.question-answer__quote_content_right {
     padding-bottom: 25px;
 }
-/* Отзывы и публикации */
+/* ---------------------------------------------------------------------------------------------- ОТЗЫВЫ И ПУБЛИКАЦИИ */
 .comments h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -354,11 +354,11 @@ input {
     font-weight: bold;
     margin-top: 60px;
 }
-.comments-content {
+.comments__content {
     background-color: #faf5f1;
     padding: 115px 20px 30px 20px;
 }
-.comments-content h2 {
+.comments__content h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 22px;
@@ -366,28 +366,28 @@ input {
     color: #39945b;
     margin-bottom: -20px;
 }
-.comments-content h3 a {
+.comments__content h3 a {
     font-size: 17px;
     color: #39945b;
 }
-.comments-content h3 a:hover {
+.comments__content h3 a:hover {
     color: #cb5a3d;
     transition: all .5s;
 }
-.comments-content p {
+.comments__content p {
     font-size: 15px;
     color: #4c453f;
     line-height: 24px;
 }
-/* Отзывы и публикации - slider */
-#comments-slider {
+/* ------------------------------------------------------------------------------------- ОТЗЫВЫ И ПУБЛИКАЦИИ - SLIDER */
+#comments__slider {
     margin: 160px 0 0 100px;
 }
-#comments-slider img {
+#comments__slider img {
     max-height: 380px;
     max-width: 270px;
 }
-#comments-slider .carousel-control.left {
+#comments__slider .carousel-control.left {
     left: -110px;
 }
 /* Новости */
@@ -415,7 +415,7 @@ input {
     color: #cb5a3d;
     transition: all .5s;
 }
-/* Footer */
+/* ----------------------------------------------------------------------------------------------------------- FOOTER */
 .footer-container,
 .footer-container-xs{
     background-color: #352f29;
@@ -425,14 +425,14 @@ input {
 .footer-xs {
     padding: 60px 0 90px 0;
 }
-.copyright p {
+.footer__copyright p {
     text-align: center;
     color: #c6c6c6;
 }
-.copyright img {
+.footer__copyright img {
     padding-bottom: 20px;
 }
-.copyright .evrika {
+.footer__copyright .evrika {
     padding-top: 30px;
 }
 .footer h5,
@@ -457,21 +457,21 @@ input {
     color: #cb5a3d;
     transition: all .5s;
 }
-.subscribe a {
+.footer__subscribe a {
     text-transform: uppercase;
 }
-.subscribe form button {
+.footer__subscribe form button {
     float: left;
     margin-top: 30px;
 }
-.subscribe form input {
+.footer__subscribe form input {
     background-color: transparent;
     color: #c6c6c6;
     padding-bottom: 10px;
     margin-top: 10px;
 }
-.footer_number,
-.footer_number-xs{
+.footer__phone,
+.footer__phone-xs{
     font-size: 22px;
     margin: 10px 0 -3px 0;
 }
@@ -483,7 +483,7 @@ input {
     margin-right: 5px;
 }
 
-/* @media */
+/* ----------------------------------------------------------------------------------------------------------- @MEDIA */
 @media only screen and (max-width: 1390px) {
     /* Slider */
     #slider .carousel-caption {
@@ -500,7 +500,7 @@ input {
 }
 @media only screen and (min-width: 1200px) {
     /* Вопрос - ответ */
-    .quote-content p.link-left {
+    .question-answer__quote p.question-answer__quote_content_left {
         padding-bottom: 49px;
     }
     /* Footer */
@@ -510,16 +510,16 @@ input {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     /* Header */
-    .phone_number {
+    .header__phone {
         font-size: 14px;
         font-weight: bold;
     }
-    .contact-numbers a {
+    .header__contacts a {
         color: #39945b;
         font-size: 14px;
     }
     /* Navbar */
-    .navbar-nav li > .divider-nav {
+    .navbar-nav li > .divider {
         margin-top: 27px;
         margin-left: 60px;
     }
@@ -532,41 +532,41 @@ input {
         margin-right: 80px;
     }
     /* Наши клиенты - slider */
-    #clients-slider .carousel-inner {
+    #clients__slider .carousel-inner {
         left: 10px;
     }
-    #clients-slider img:first-child {
+    #clients__slider img:first-child {
         margin-left: -15px;
     }
-    #clients-slider a {
+    #clients__slider a {
         margin-right: 0;
     }
-    #clients-slider a:last-child {
+    #clients__slider a:last-child {
         margin-right: -40px;
     }
     .carousel-control {
         left: -80px;
     }
     /* Вопрос - ответ */
-    .quote-content p.link-left {
+    .question-answer__quote p.question-answer__quote_content_left {
         padding-bottom: 25px;
     }
     /* Отзывы и публикации - slider */
-    #comments-slider {
+    #comments__slider {
         margin-left: 20px;
     }
-    #comments-slider img {
+    #comments__slider img {
         max-width: 220px;
     }
-    #comments-slider .carousel-control.left {
+    #comments__slider .carousel-control.left {
         left: -60px;
     }
     /* Footer */
-    .footer_number {
+    .footer__phone {
         font-size: 16px;
         margin: 10px 0 -3px 0;
     }
-    .number a {
+    .footer__contacts a {
         font-size: 14px;
     }
     .footer .skype {
@@ -600,7 +600,7 @@ input {
 }
 @media only screen and (max-width: 1013px) {
     /* Navbar */
-    .navbar-nav li > .divider-nav {
+    .navbar-nav li > .divider {
         margin-left: 50px;
     }
     .navbar-default .navbar-nav li > a {
@@ -613,10 +613,10 @@ input {
 }
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
     /* Вопрос - ответ */
-    .quote-content p.link-left {
+    .question-answer__quote p.question-answer__quote_content_left {
         padding-bottom: 73px;
     }
-    .quote-content p.link-right {
+    .question-answer__quote p.question-answer__quote_content_right {
         padding-bottom: 25px;
     }
     /* Footer */
@@ -626,7 +626,7 @@ input {
 }
 @media only screen and  (min-width: 768px) and (max-width: 991px) {
     /* Header */
-    .phone_number {
+    .header__phone {
         margin-bottom: 0;
     }
     #logo {
@@ -649,7 +649,7 @@ input {
         color: #000;
     }
     /* Navbar */
-    .navbar-nav li > .divider-nav {
+    .navbar-nav li > .divider {
         margin-left: 40px;
     }
     .navbar-default .navbar-nav li > a {
@@ -693,39 +693,39 @@ input {
         height: 13px;
     }
     /* underlines */
-    .underline_2 {
+    .intro__underline {
         margin-top:7%;
     }
-    .underline_3 {
+    .default_underline {
         margin-top: 2%;
     }
-    .underline_4 {
+    .question-answer__underline {
         margin-top: 2%;
     }
     /* Вопрос - ответ */
-    .quote-content {
+    .question-answer__quote {
         margin: 60px 30px 80px 0;
     }
-    .quote-content:first-child {
+    .question-answer__quote:first-child {
         margin-bottom: 0;
     }
     /* Отзывы и публикации */
-    .comments-content {
+    .comments__content {
         padding: 50px 20px 50px 20px;
         margin-bottom: 20px;
     }
-    .comments-content p {
+    .comments__content p {
         padding-bottom: 20px;
     }
     /* Отзывы и публикации - slider */
-    #comments-slider {
+    #comments__slider {
         margin: 10px 0 50px 100px;
     }
-    #comments-slider img {
+    #comments__slider img {
         max-height: 380px;
         max-width: 270px;
     }
-    #comments-slider .carousel-control.left {
+    #comments__slider .carousel-control.left {
         left: -90px;
     }
     /* Новости */
@@ -739,13 +739,13 @@ input {
     .footer {
         padding: 40px 0 30px 0;
     }
-    .copyright p {
+    .footer__copyright p {
         font-size: 10px;
     }
-    .copyright img {
+    .footer__copyright img {
         padding-bottom: 10px;
     }
-    .copyright .evrika {
+    .footer__copyright .evrika {
         padding-top: 10px;
         max-width: 14px;
     }
@@ -756,22 +756,22 @@ input {
         font-size: 12px;
         line-height: 20px;
     }
-    .subscribe a {
+    .footer__subscribe a {
         font-size: 12px;
     }
     .footer form{
         margin-left: 0;
     }
-    .subscribe form button {
+    .footer__subscribe form button {
         float: left;
         margin-top: 10px;
     }
-    .subscribe form input {
+    .footer__subscribe form input {
         padding-bottom: 5px;
         margin-top: 5px;
         font-size: 10px;
     }
-    .footer_number {
+    .footer__phone {
         font-size: 13px;
     }
     .footer .skype {
@@ -787,30 +787,30 @@ input {
 }
 @media only screen and (max-width: 991px) {
     /* Header */
-    .phone_number {
+    .header__phone {
         font-size: 14px;
         margin-left: 10px;
     }
-    .contact-numbers a {
+    .header__contacts a {
         color: #39945b;
         font-size: 14px;
         margin-left: 10px;
     }
     /* Наши клиенты - slider */
-    #clients-slider {
+    #clients__slider {
         margin: 60px 0 80px 0;
     }
-    #clients-slider .carousel-inner {
+    #clients__slider .carousel-inner {
         left: 50px;
     }
-    #clients-slider a:first-child {
+    #clients__slider a:first-child {
         margin-left: 0;
     }
-    #clients-slider a {
+    #clients__slider a {
         margin-right: 5px;
         max-width: 200px;
     }
-    #clients-slider a:last-child {
+    #clients__slider a:last-child {
         margin-right: 15px;
     }
     .carousel-control {
@@ -832,7 +832,7 @@ input {
 }
 @media only screen and (max-width: 873px) {
     /* Navbar */
-    .navbar-nav li > .divider-nav {
+    .navbar-nav li > .divider {
         margin-left: 30px;
     }
     .navbar-default .navbar-nav li > a {
@@ -845,7 +845,7 @@ input {
 }
 @media only screen and (min-width: 768px) {
     /* Header */
-    .contact-numbers-sm {
+    .header__contacts-sm {
         display: none
     }
     .divider {
@@ -859,10 +859,10 @@ input {
         display: none;
     }
     /* Наши клиенты */
-    #clients-slider {
+    #clients__slider {
         display: block;
     }
-    #clients-slider-xs {
+    #clients__slider-xs {
         display: none;
     }
     /* Footer */
@@ -872,7 +872,7 @@ input {
     .footer-container-xs {
         display: none;
     }
-    .social-icons-navbar {
+    .social-icons {
         display: none;
     }
 }
@@ -884,19 +884,19 @@ input {
     #logo {
         display: none;
     }
-    .contact-numbers {
+    .header__contacts {
         display: none;
     }
-    .phone_number {
+    .header__phone {
         font-size: 14px;
         margin-bottom: 0;
         margin-top: 10px;
     }
-    .contact-numbers-sm {
+    .header__contacts-sm {
         margin: 20px 0 10px 10px;
         padding-bottom: 0px;
     }
-    .contact-numbers-sm a {
+    .header__contacts-sm a {
         font-size: 10px;
         margin-left: 10px;
     }
@@ -939,7 +939,7 @@ input {
         padding-left: 0;
         border: none;
     }
-    .navbar-nav li > .divider-nav {
+    .navbar-nav li > .divider {
         display: none;
     }
     .navbar-default .navbar-nav > li > a {
@@ -969,10 +969,10 @@ input {
         overflow: hidden;
         background-color: #e2e2e2;
     }
-    .social-icons-navbar {
+    .social-icons {
         margin-left: 20px;
     }
-    .social-icons-navbar img {
+    .social-icons img {
         margin: 0 0 10px 0;
         max-width: 30px;
     }
@@ -1008,18 +1008,18 @@ input {
         border: 2px solid #39945b;
     }
     /* underlines */
-    .underline_1 {
+    .slider__underline {
         display: none;
     }
-    .underline_2 {
+    .intro__underline {
         margin-top:7%;
         border-bottom: 2px solid #39945b;
     }
-    .underline_3 {
+    .default_underline {
         margin-top: 2%;
         border-bottom: 2px solid #39945b;
     }
-    .underline_4 {
+    .question-answer__underline {
         margin-top: 2%;
         border-bottom: 2px solid #FFFFFF;
     }
@@ -1049,22 +1049,22 @@ input {
         margin-right: 20px;
     }
     /* Наши клиенты */
-    #clients-slider {
+    #clients__slider {
         display: none;
     }
-    #clients-slider-xs {
+    #clients__slider-xs {
         margin: 50px 0 60px 0;
     }
-    #clients-slider-xs .item {
+    #clients__slider-xs .item {
         text-align: center;
     }
-    #clients-slider-xs p a img {
+    #clients__slider-xs p a img {
         max-width: 280px;
     }
     .carousel-control {
         left: 0;
     }
-    .our-clients h2 {
+    .clients__header h2 {
         font-size: 20px;
     }
     /* Вопрос - ответ */
@@ -1072,35 +1072,35 @@ input {
         font-size: 20px;
         margin-top: 40px;
     }
-    .quote-content {
+    .question-answer__quote {
         margin: 120px 10px 80px 10px;
         padding: 10px 15px 0 30px;
     }
-    .quote-content h4 {
+    .question-answer__quote h4 {
         line-height: 26px;
     }
-    .quote-article {
+    .question-answer__quote_content {
         padding-bottom: 60px;
     }
-    .quote-content:last-child {
+    .question-answer__quote:last-child {
         margin-top: 5px;
     }
-    .quote-content p {
+    .question-answer__quote p {
         margin: 15px 0 0 15px;
     }
-    .quote-content img {
+    .question-answer__quote img {
         padding: 10px 0 0 5px;
     }
-    .quote-content a {
+    .question-answer__quote a {
         border-bottom: 2px solid #39945b;
     }
-    .quote-content a:hover {
+    .question-answer__quote a:hover {
         border-bottom: 2px solid #cb5a3d;
     }
-    .quote-content p.link-left {
+    .question-answer__quote p.question-answer__quote_content_left {
         padding-bottom: 50px;
     }
-    .quote-content p.link-right {
+    .question-answer__quote p.question-answer__quote_content_right {
         padding-bottom: 35px;
     }
     /* Отзывы и публикации */
@@ -1108,22 +1108,22 @@ input {
         font-size: 20px;
         margin-top: 50px;
     }
-    .comments-content {
+    .comments__content {
         padding: 30px 20px 40px 20px;
     }
-    .comments-content h2 {
+    .comments__content h2 {
         font-size: 20px;
         margin-bottom: -10px;
     }
     /* Отзывы и публикации - slider */
-    #comments-slider {
+    #comments__slider {
         margin: 40px 0 40px 60px;
     }
-    #comments-slider img {
+    #comments__slider img {
         max-height: 380px;
         max-width: 235px;
     }
-    #comments-slider .carousel-control.left {
+    #comments__slider .carousel-control.left {
         left: -30px;
     }
     /* Новости */
@@ -1156,7 +1156,7 @@ input {
         margin-top: 20px;
         max-width: 25px;
     }
-    .footer_number-xs{
+    .footer__phone-xs{
         font-size: 16px;
         margin: 10px 0 -3px 0;
     }
@@ -1168,31 +1168,31 @@ input {
 }
 @media only screen and (min-width: 600px) {
     /* Отзывы и публикации - slider */
-    #comments-slider img {
+    #comments__slider img {
         margin: 0 auto;
         max-height: 380px;
         max-width: 235px;
     }
-    #comments-slider .carousel-control.left {
+    #comments__slider .carousel-control.left {
         left: -30px;
     }
 }
 @media only screen and (max-width: 520px) {
     /* Наши клиенты */
-    #clients-slider-xs p a img {
+    #clients__slider-xs p a img {
         display: inline-block;
         max-width: 175px;
     }
 }
 @media only screen and (max-width: 480px) {
     /* Наши клиенты */
-    #clients-slider-xs p a img {
+    #clients__slider-xs p a img {
         min-height: 40px;
         max-height: 40px;
         max-width: 130px;
     }
     /* Отзывы и публикации - slider */
-    #comments-slider img {
+    #comments__slider img {
         margin: 0 auto;
         max-height: 380px;
         max-width: 200px;
